@@ -1,0 +1,244 @@
+.header{
+ display: grid;
+ grid-template-columns: auto 1fr;
+}
+.header h1{
+ flex: 1;
+}
+.header li{
+display: flex;
+ list-style: none;
+justify-content: space-between;
+}
+.header a{
+ display: flex;
+ text-decoration: none;
+ font-size: 30px;
+ color: black;
+}
+ul{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ list-style: none;
+ justify-content: space-around;
+}
+a:focus{
+  color: orangered;
+}
+*{
+  box-sizing: border-box;
+}
+ .contain{
+   display: flex;
+   flex-direction: column;
+justify-content: center;
+align-items: center;
+   height: 700px;
+   width: 150vw;
+   overflow: hidden;
+   margin: 0;
+   background-image: url(./slide1.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   z-index: 1;
+  background-size: contain;
+  transition: 0.4s ease;
+ }
+ contain::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width:50%;
+   z-index: -1;
+   height: 50vh;
+   background-color: rgba(0, 0, 0, 0.7)
+ }
+ .slide-container{
+   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+   height: 30vh;
+   width: 100vw;
+   position: relative;
+   overflow: hidden;
+ }
+ .slide{
+   opacity: 0;
+   height: 100vh;
+   width: 100vw;
+   background-size: cover;
+   background-position: center center;
+   position: absolute;
+ }
+.slide.active{
+  opacity: 1;
+}
+.arrow{
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  border: 2px solid orangered;
+  top: 75%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+.left-arrow{
+  left: calc(5vw - 65px);
+}
+.right-arrow{
+  right: calc(5vw - 65px);
+}
+h1{
+  color: white;
+}
+.colo{
+  color: orangered;
+}
+.back{
+  background-color: white;
+  border: 2px solid white;
+  width: 20%;
+}
+.cent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orange{
+  color: orangered;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+h2{
+  font-weight: bolder;
+}
+.white{
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 800px;
+  padding: 20px;
+}
+.box{
+border: 3px black ghostwhite;
+margin-top: 50px;
+background-color: black;
+width: 700px;
+margin-bottom: 50px;
+color: white;
+padding: 20px;
+}
+.first{
+  display: flex;
+}
+.vidbg{
+  background-image: url("vidbg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 1300px;
+}
+.vidbg2{
+  background-image: url("vidbg1.png");
+  height: 300px;
+  width: 600px;
+  margin-right: 70px;
+  position: relative;
+  left: 300px;
+}
+.container{
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.flex container{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 40px;
+}
+.round{
+  background-color: orangered;
+  width: 50px;
+height: 50px;
+border-radius: 50px;
+position: relative;
+}
+.flexes{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 250px;
+  background-color: #ff340017;
+  padding: 20px;
+  border-radius: 20px;
+}
+.best{
+  background-color: whitesmoke;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.best ul{
+  justify-content: space-between
+}
+.bord{
+  background-color: ghostwhite;
+  padding-left: 20px;
+  box-shadow: 6px white;
+  border-right: 10px;
+}
+.bord1{
+  display: flex;
+  gap: 400px;
+  width: 600px;
+}
+.sched{
+  display: flex;
+}
+#prop{
+  background-color: whitesmoke;
+  width: 800px;
+  height: 1200px;
+  padding: 50px;
+}
+.lux{
+  display: flex;
+  gap: 60px;
+}
+.contbg {
+  background-image: url("contbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 1300px;
+  }
+  .contbg2 {
+    background-image: url("contbg2.png");
+    height: 300px;
+    width: 600px;
+    margin-right: 70px;
+    position: relative;
+    left: 300px;
+    background-repeat: no-repeat;
+  }
+  #cu{
+    display: flex;
+    background-color: black;
+    margin-top: 50px;
+    padding: 50px;
+    width: 1000px;
+    border-radius: 30px;
+  }
+   #sv{
+     background: ghostwhite;
+     height: 900px;
+     width: 1200px;
+     justify-content: center;
+     align-items: center;
+     padding: 40px;
+   }
+   
